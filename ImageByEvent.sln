@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageByEvent", "ImageByEvent\ImageByEvent.csproj", "{A9397461-D651-4E91-8B68-3F6E2A962FA8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageByEventGettySearch", "ImageByEventGettySearch\ImageByEventGettySearch.csproj", "{60987726-BF02-4697-911D-E283C53CBD65}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageByEventLib", "ImageByEventLib\ImageByEventLib.csproj", "{0C0A8880-6303-408E-B0FD-D0CE4A860AE0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A9397461-D651-4E91-8B68-3F6E2A962FA8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9397461-D651-4E91-8B68-3F6E2A962FA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9397461-D651-4E91-8B68-3F6E2A962FA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9397461-D651-4E91-8B68-3F6E2A962FA8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{60987726-BF02-4697-911D-E283C53CBD65}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60987726-BF02-4697-911D-E283C53CBD65}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60987726-BF02-4697-911D-E283C53CBD65}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60987726-BF02-4697-911D-E283C53CBD65}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0C0A8880-6303-408E-B0FD-D0CE4A860AE0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C0A8880-6303-408E-B0FD-D0CE4A860AE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C0A8880-6303-408E-B0FD-D0CE4A860AE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C0A8880-6303-408E-B0FD-D0CE4A860AE0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
