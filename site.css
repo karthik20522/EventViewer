@@ -83,7 +83,7 @@ table {
    border-right: 1px solid #808080;
     float: left;
     margin-bottom: 20px;
-    max-width: 330px;
+    width: 330px;
     min-height: 145px;
     padding-left: 10px;
     padding-right: 10px; 
@@ -105,6 +105,12 @@ table {
     font-size:16px;
     text-align:center;    
     width:100%;    
+}
+
+.part {
+    width:50%;
+    height: 50%;
+    float: left;
 }
 
 #mainBody {
