@@ -13,7 +13,7 @@ namespace ImageByEventGettySearch
 {
     public class DominantColor
     {
-        public async Task<string> GetDominantColor(string source)
+        public async Task<List<string>> GetDominantColor(string source)
         {
             var _client = new HttpClient();
 
@@ -33,9 +33,9 @@ namespace ImageByEventGettySearch
                                 Count = grp.Count()
                             })
                         .OrderByDescending(x => x.Count)
-                        .Take(1); //take top color
+                        .Take(4); //take top 4 color
 
-                return ColorTranslator.ToHtml(colorsWithCount.First().Color);
+                return colorsWithCount.Select(s => ColorTranslator.ToHtml(s.Color)).ToList();
             }
         }
 

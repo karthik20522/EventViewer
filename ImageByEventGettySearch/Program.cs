@@ -29,10 +29,10 @@ namespace ImageByEventGettySearch
         {
             authInfo = new AuthInfo
             {
-                SystemId = "",
-                SystemPassword = "",
-                UserName = "",
-                Password = "",
+                SystemId = "x",
+                SystemPassword = "x",
+                UserName = "x",
+                Password = "x",
                 ConnectionMode = ConnectionMode.Production
             };
             apiClient = new Client(authInfo);
@@ -64,7 +64,7 @@ namespace ImageByEventGettySearch
 
             var sqs = AWSClientFactory.CreateAmazonSQSClient();
             var receiveMessageRequest = new ReceiveMessageRequest();
-            receiveMessageRequest.QueueUrl = "https://sqs.us-west-2.amazonaws.com/xxx";
+            receiveMessageRequest.QueueUrl = "https://sqs.us-west-2.amazonaws.com/xx";
             var receiveMessageResponse = sqs.ReceiveMessage(receiveMessageRequest);
                 
             if (receiveMessageResponse.IsSetReceiveMessageResult())

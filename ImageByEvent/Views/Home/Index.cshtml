@@ -26,11 +26,11 @@
                     <input id="searchGettyInputBox" type="text" placeholder="Search here..." required>
                     <button id="searchGetty" type="submit">Search</button>
                 </form> *@
-                <span class="note">
+                @*<span class="note">
                     Each square represents images of a particular Event using the most dominant color of that image. 
                     Upon hover the original image and it's description
                     can be viewed.
-                </span>
+                </span>*@
                 <br /><br />
                 <span class="note">
                     <span>github @@ <a target="_blank" href="http://github.com/karthik20522">karthik20522</a></span>
@@ -39,7 +39,9 @@
                     <br />
                     <span>Images from <a href="http://www.gettyimages.com">GettyImages</a></span>
                     <span style="padding-left:5px;padding-right:8px;">|</span>
-                    <span>ConnectAPI <a target="_blank" href="http://github.com/gettyimages">documentation</a></span>                    
+                    <span>ConnectAPI <a target="_blank" href="http://github.com/gettyimages">documentation</a></span>      
+                    <br /><br />
+                    <span>Blog article <a href="http://kufli.blogspot.com/2013/10/event-viewer-image-search.html">Event Viewer</a></span>              
                 </span>
             </div>
                @foreach (var imgGrp in Model)
@@ -47,7 +49,9 @@
                     <div class="box">
                         @foreach (var img in imgGrp.ImageDetails)
                         {
-                            <div data-tip="<a href='http://gty.im/@img.ImageId' target='_blank'><img class='orImg' src='@img.Thumbnail' /></a>" class="smallBox" style="background-color:@img.DominantColor"></div>
+                            <div data-tip="<a href='http://gty.im/@img.ImageId' target='_blank'><img class='orImg' src='@img.Thumbnail' /></a>" class="smallBox">
+                                <div class="part" style="background-color:@img.DominantColor[0]"></div><div class="part" style="background-color:@img.DominantColor[1]"></div><div class="part" style="background-color:@img.DominantColor[2]"></div><div class="part" style="background-color:@img.DominantColor[3]"></div>
+                            </div>
                         }
                         <span class="note">
                             <a style="color:white;" href="#">@imgGrp.EventName</a>

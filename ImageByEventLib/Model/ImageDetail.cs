@@ -16,6 +16,6 @@ namespace ImageByEventLib.Model
         public string ImageId { get; set; }
         public int EventId { get; set; }
         public string Thumbnail { get; set; }
-        public string DominantColor { get; set; }   
+        public List<string> DominantColor { get; set; }   
     }
 }
